@@ -24,6 +24,12 @@
       font-size: 2em;
       font-weight: bold;
       border-radius: 0;
+
+      &::placeholder {
+        color: black;
+        opacity: 0.3;
+      }
+      
     }
   }
 

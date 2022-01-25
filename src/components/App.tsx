@@ -22,8 +22,6 @@ export default function App() {
       lon: position.coords.longitude,
     }
 
-    alert(geolocation.lat + " " + geolocation.lon);
-
     const location = await fetchLocation(geolocation);
     const {status, message} = await getWeather(geolocation);
     
@@ -36,7 +34,6 @@ export default function App() {
 
   const getLocation = () => {
     navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError);
-    alert("pressed");
   }
 
   return (
