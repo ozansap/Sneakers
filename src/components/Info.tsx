@@ -84,7 +84,7 @@ export default function Info({
         </div>
       }
       <div className="Message">
-        <h3>{data.message}</h3>
+        <h2>{data.message}</h2>
       </div>
       <button onClick={handleGetLocation}>Use My Location</button>
     </div>
