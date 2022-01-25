@@ -1,0 +1,83 @@
+@import '_vars.scss';
+
+.Info {
+  margin-top: 20vh;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  
+  transition: $transition;
+  
+  > .Title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+
+    > input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid black;
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+
+  > .Options {
+    border: 3px solid black;
+    padding-right: 0 4em;
+    max-height: 20em;
+    width: 20em;
+    overflow-y: scroll;
+
+    > .Location {
+      cursor: pointer;
+      margin: 1em;
+      display: flex;
+
+      > .Country {
+        width: 2.5em;
+      }
+    }
+  }
+
+  > button {
+    background-color: transparent;
+    border: 3px solid black;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Info {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .Info {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+	.Info {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-height: 500px) {
+	.Info {
+    gap: 1em;
+
+    > .Options {
+      max-height: 10em;
+    }
+  }
+}
