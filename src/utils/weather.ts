@@ -1,7 +1,7 @@
 import { geolocationType, locationType, Status, Units, weatherResultType } from "../types/types";
 
 const domain = "https://api.openweathermap.org";
-const key = process.env.OPENWEATHERMAP_KEY;
+const key = "b9d351f42a1197e0b4de8bf609f4d6b8"; // I know...
 const units = Units.METRIC;
 
 export const fetchGeolocation = async (location: locationType): Promise<geolocationType | null> => {
