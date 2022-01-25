@@ -1,6 +1,6 @@
 import { geolocationType, locationType, Status, Units, weatherResultType } from "../types/types";
 
-const domain = "http://api.openweathermap.org";
+const domain = "https://api.openweathermap.org";
 const key = process.env.OPENWEATHERMAP_KEY;
 const units = Units.METRIC;
 
